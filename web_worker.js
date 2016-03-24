@@ -37,11 +37,17 @@ let fetch_stuff = (url) => {
             //  notificando que terminamos la tarea y enviando un dato
             //  en este caso el JSON del recurso consumido por HTTP
             self.postMessage(jsonObj);
+
+            // ¡OPCIONAL! Cerramos el worker una vez se finaliza la tarea deseada.
+            self.close();
         })
         // Si existiera error, el método catch lo recibiría...
         .catch((err) => {
             // ... y lo notificaría en consola.
             console.error(err);
+
+            // ¡OPCIONAL! Cerramos el worker una vez se finaliza la tarea deseada.
+            self.close();
         })
 }
 
