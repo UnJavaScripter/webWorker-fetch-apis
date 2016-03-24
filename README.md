@@ -32,3 +32,7 @@ No disponible todavía en:
     
 - IE/Edge
 - Safari
+
+## Demo
+
+El contenido de este repo [corriendo en GitHub pages](http://unjavascripter.github.io/webWorker-fetch-apis/).
