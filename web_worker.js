@@ -8,7 +8,7 @@
 //
 //   De hecho el código funcionaría sin problema si quitaramos la referencia a self.  
 
-console.log(self.document)
+
 // Creamos un listener para el worker que esuchará a un llamado externo (desde app.js).
 self.onmessage = function(e) {
   // Al recibir un mensaje decimos algo en consola...
